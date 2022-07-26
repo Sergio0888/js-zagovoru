@@ -1,0 +1,2 @@
+!function(){document.querySelectorAll("[data-modal-open]").forEach((function(e){return e.addEventListener("click",d)}));var e={closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function d(){e.modal.classList.remove("is-hidden")}e.closeModalBtn.addEventListener("click",(function(){e.modal.classList.add("is-hidden")}))}();
+//# sourceMappingURL=index.ec6352ad.js.map

@@ -1,0 +1,2 @@
+(()=>{document.querySelectorAll("[data-modal-open]").forEach((e=>e.addEventListener("click",d)));const e={closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function d(){e.modal.classList.remove("is-hidden")}e.closeModalBtn.addEventListener("click",(function(){e.modal.classList.add("is-hidden")}))})();
+//# sourceMappingURL=index.1fbf1b50.js.map
