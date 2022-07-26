@@ -1,0 +1,137 @@
+
+.header__open-menu {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    @media (min-width: 550px) {
+        display: none;
+    }
+
+    &-icon {
+        width: 40px;
+        height: 40px;
+
+        &-cross:hover , &-cross:focus {
+            fill: $main-color;
+        }
+    }
+}
+
+.mobile-menu__modal.is-hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.mobile-menu__modal {
+    z-index: 1;
+
+    position: fixed;
+    display: flex;
+    top: 0;
+    opacity: 1;
+    padding: 48px 40px;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: $second-text-color;
+
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.mobile-menu__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &-icon {
+        width: 40px;
+        height: 40px;
+
+        &-close:hover , &-close:focus {
+            fill: $main-color;
+        }
+    }
+}
+
+.mobile-menu__link {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+}
+
+.mobile-menu__item {
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-menu__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    }
+
+    &-tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: $main-color;
+    }
+    &-mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: $first-text-color;
+    }
+}
+
+.mobile-menu__socials {
+    display: flex;
+    
+    @media (max-width: 430px) {
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        margin-right: 20px;
+    }
+
+    &-link {
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $main-color;
+
+        &._column::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            right: -22px;
+            top: 10px;
+            transform: rotate(90deg);
+            border-top: 1px solid #21212133;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <div class="container form__container">
+            <form class="modal__form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <p class="modal__form-title">Заповніть анкету</p>
+                
+                
+                <label class="modal__label" for="form-name">Ім'я</label>
+                <div class="modal__form-input-box">
+                    <input
+                    class="modal__form-input"
+                     type="text"
+                     name="form-name"
+                     id="form-name">
+                    <span class="modal__input-item">
+                        <svg  class="modal__input-icon">
+                       <use href="./images/icons/form-icons.svg#icon-name"></use></svg></span>
+                    </div>
+
+
+                 <label class="modal__label" for="form-tel">Телефон</label>
+                <div class="modal__form-input-box">
+                    <input
+                    class="modal__form-input"
+                     type="tel"
+                     name="form-tel"
+                     id="form-tel">
+                    <span class="modal__input-item">
+                    <svg class="modal__input-icon">
+                        <use href="./images/icons/form-icons.svg#icon-tel"></use></svg></span>
+                    </div>
+
+                <label class="modal__label" for="form-email">Пошта</label>
+                <div class="modal__form-input-box">
+                    <input
+                    class="modal__form-input"
+                     type="email"
+                     name="form-email"
+                     id="form-email">
+                    <span class="modal__input-item">
+                    <svg class="modal__input-icon">
+                        <use href="./images/icons/form-icons.svg#icon-mail"></use></svg></span>
+                </div>
+
+                 <label class="modal__label" for="form-textarea">Побажання</label>
+                <textarea
+                class="modal__form-input modal__form-textarea" 
+                name="form-textarea-message"
+                id="form-textarea"
+                placeholder="Введіть текст"
+                cols="30" 
+                rows="10"></textarea>
+
+                <label class="form__checkbox-label" for="form-checkbox">
+                <input 
+                class="form__checkbox-input" 
+                type="checkbox" 
+                name="checkbox" 
+                id="form-checkbox">
+                <span class="form__checkbox-checkmark">
+                    <svg  class="form__checkbox-icon">
+                    <use href="./images/icons/form-icons.svg#icon-check"></use></svg>
+                </span>
+                Підписатись на розсилку безкоштовних матеріалів від нашої команди
+                <!-- <a class="form__checkbox-link" href="">Умови договору</a> -->
+                </label>
+
+                <button class="btn" type="submit">Відправити</button>
+
+
+            </form>
+        </div>
+        <div class="modal__close" data-modal-close>
+        </div>
+    </div>
+</div>

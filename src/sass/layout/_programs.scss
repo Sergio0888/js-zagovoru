@@ -1,0 +1,227 @@
+.portfolio__filter {
+    display: flex;
+
+    @media (max-width: 641px) {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+
+        &-item {
+            margin-bottom: 15px;
+        }
+    
+    }
+
+    @media (min-width: 641px) {
+        margin-bottom: 50px;
+        justify-content: center; 
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.section-programs {
+    background: linear-gradient(#b6b0ee, #b08bd5);
+}
+
+
+.kurs__list {
+        display: flex;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: $first-text-color;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-item {
+            display: flex;
+            margin-top: 30px;
+            width: 30%;
+            background: #9fe9e5;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &-text {
+                text-align: center;
+                color: black;
+                font-size: 18px;
+            }
+        }
+}
+
+.kurs__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-icon {
+        margin-top: 30px;
+    }
+
+    &-text {
+        margin-top: 30px;
+        color: $first-text-color;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+
+
+
+
+
+
+
+
+.portfolio__btn {
+    width: 100%;
+    height: 100%;
+
+    font-weight: 500;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    color: $main-text-color;
+    background-color: #F5F4FA;
+    box-shadow: none;
+
+    &:hover, &:focus {
+        color: $second-text-color;
+        background-color: $main-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.portfolio__list {
+    display: flex;
+    
+    @media (max-width: 641px) {
+        flex-direction: column;
+
+    }
+
+    @media (min-width: 641px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+}
+
+
+.portfolio__item {
+    transition: $main-trans;
+    max-width: 370px;
+
+    @media (max-width: 640px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1200px) {
+        width: calc(50% - 15px);
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+    @media (min-width: 1201px) {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        
+        .portfolio__image-box {
+            top: 0;
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}
+
+.portfolio__item-box {
+    position: relative;
+    overflow: hidden;
+
+    height: 280px;
+}
+
+// .portfolio__item-box-image {
+//         width: 100%;
+// }
+
+.portfolio__image-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    padding: 0 25px;
+    opacity: 0;
+    top: 0;
+    transform: translateY(100%);
+    color: $second-text-color;
+    transition: $main-trans;
+    background: linear-gradient(#51677ae6, #000000e6);
+
+    @media (max-width: 340px) {
+        padding: 0;
+    }
+}
+
+.portfolio__image-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    @media (max-width: 300px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 16px;
+    }
+}
+
+.portfolio__description-box {
+    padding: 20px 24px;
+    box-sizing: border-box;
+    // border: 2px solid #fcfbff;
+    border-top: none;
+    border-top-width: 110px;
+    background: linear-gradient(#18171b, #525276);
+
+    @media (min-width: 481px) and (max-width: 722px) {
+        &._box-padding {
+            padding-bottom: 56px;
+        }
+    }
+}
+
+.portfolio__description-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: white;
+}
+
+.portfolio__description-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #b8b4cb;
+}

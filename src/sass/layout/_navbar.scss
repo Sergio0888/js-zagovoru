@@ -1,0 +1,171 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background: linear-gradient(#fff , #8f88f0a1);
+
+    @media (max-width: 550px) {
+        padding: 10px 15px;
+    }
+
+    @media (min-width: 550px) and (max-width: 1200px) {
+        padding: 21px 15px;
+    }
+
+    @media (min-width: 1201px) {
+        padding: 25px 15px;
+    }
+
+    &-programs {
+        border-bottom: antiquewhite;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+
+        @media (max-width: 550px) {
+            display: none;
+        }
+
+        @media (min-width: 550px) and (max-width: 710px) {
+            margin-left: 20px;
+        }
+
+        @media (min-width: 710px) and (max-width: 1200px) {
+            margin-left: 88px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 93px;
+        }
+    }
+
+    &__menu-item {
+        position: relative;
+
+
+        &:not(:last-child) {
+            margin-right: 50px;
+
+            @media (min-width: 550px) and (max-width: 600px) {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 700px) {
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+
+        &.active::after {
+            content: '';
+            position: absolute;
+            bottom: -33px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: $main-color;
+            border-radius: 2px;
+            transition: $main-trans;
+        }
+    }
+
+    &__menu-link {
+        color: $main-text-color;
+        align-items: center;
+        transition: $main-trans;
+        font-weight: 500;
+
+        @media (min-width: 550px) and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        }
+
+        &-color {
+            color: $main-color;
+        }
+    }
+
+    &__address {
+        display: flex;
+        transition: $main-trans;
+
+        @media (max-width: 550px) {
+            display: none;
+        }
+        @media (min-width: 550px) and (max-width: 920px) {
+            flex-direction: column;
+        }
+        @media (min-width: 921px) {
+            align-items: center;
+        }
+
+    }
+
+    &__address-item {
+        display: flex;
+
+        @media (max-width: 920px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (min-width: 921px) {
+            margin-left: 50px;
+        }
+    }
+
+    &__address-link {
+        display: flex;
+        color: $first-text-color;
+        transition: $main-trans;
+        font-weight: 500;
+
+        @media (min-width: 550px) and (max-width: 1200px) {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+        }
+
+        &:hover, &:focus {
+            color: $main-color;
+
+            .header__adress-icon {
+                fill: $main-color;
+            }
+        }
+
+    }
+
+    &__adress-icon {
+        max-width: 16px;
+        max-height: 16px;
+        fill: $first-text-color;
+        margin-right: 10px;
+        transition: $main-trans;
+
+        @media (min-width: 550px) and (max-width: 1200px) {
+            max-width: 14px;
+            max-height: 14px;
+        }
+
+        @media (min-width: 1201px) {
+            max-width: 16px;
+            max-height: 16px;
+        }
+    }
+}

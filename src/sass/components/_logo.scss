@@ -1,0 +1,41 @@
+.logo {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.20;
+    color: $main-text-color;
+
+    z-index: 1;
+
+    &__colored {
+        color: $main-color;
+    }
+    &_c-white {
+        color: $second-text-color;
+    }
+}
+
+.logo-image-svg::after {
+    content: '';
+    position: absolute;
+
+    background: url('../images/icons/megaphone.svg') 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+}
+
+// .logo-image {
+//     width: 40px;
+//     height: 40px;
+//     z-index: 1;
+//     position: absolute;
+//     top: 7px;
+//     left: 274px;
+// }
+
+// .microphone {
+//     width: 30px;
+//     top: 7px;
+//     left: 140px;
+// }

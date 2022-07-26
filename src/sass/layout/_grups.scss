@@ -1,0 +1,92 @@
+.our-team {
+    background: linear-gradient(#fff , #aca6fe);
+    margin-top: 60px;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+        
+        @media (min-width: 481px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &-item {
+        background-color: $second-text-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @media (max-width: 480px) {
+            margin-top: 30px;
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+            width: calc(50% - 15px);
+            margin-top: 30px;
+    }
+
+        @media (min-width: 1201px) {
+            width: 30%;
+        }
+
+        &-image {
+            width: 100%;
+        }
+    }
+
+    &-box {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        
+        &-price {
+            z-index: 0;
+            
+            align-self: center;
+            margin-top: 30px;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.19;
+            text-align: center;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            background-color: $main-color;
+            color: $second-text-color;
+        }
+    }
+
+    &-name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 30px;
+        
+
+        &-item {
+            list-style: square;
+            margin-left: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-post {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        color: $first-text-color;
+
+        &._ind {
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+}

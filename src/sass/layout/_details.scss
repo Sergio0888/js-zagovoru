@@ -1,0 +1,161 @@
+.section-details-background {
+    background: linear-gradient(#aca6fe, #ffffff);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @media (min-width: 481px) and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+    
+    @media (min-width: 1201px) {
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            align-items: center;
+            
+            &:not(:last-child) {
+                margin-bottom: 30px;
+        }
+    }
+        
+        @media (min-width: 481px) and (max-width: 1200px) {
+            width: calc(50% - 15px);
+            
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (min-width: 1201px) {
+            max-width: 270px;
+            width: 22%;
+        }
+
+        &-box {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0;
+            background: #F5F4FA;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &-image {
+            max-width: 70px;
+            max-height: 70px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.15;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        &-description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            color: $first-text-color;
+        }
+    }
+}
+// Work
+
+.work {
+    margin-top: 94px;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        position: relative;
+        max-height: 294px;
+    }
+
+    &__description {
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    }
+
+    &__title {
+        padding: 27px 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $second-text-color;
+    }
+}
+
+.section__details {
+    font-size: 28px;
+}
+
+
+.reviews__box {
+    display: flex;
+}
+
+.reviews__image {
+    width: 100%;
+}
+
+
+// slick
+
+.slick-arrow.slick-prev {
+    width: 4%;
+    height: 12%;
+
+    background: url('../images/reviews/left-arrow-svgrepo-com.svg')  0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    font-size: 0;
+    top: 40%;
+    z-index: 10;
+
+    border: none;
+}
+
+.slick-arrow.slick-next {
+    width: 4%;
+    height: 12%;
+
+    background: url('../images/reviews/right-arrow-svgrepo-com.svg')  0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    font-size: 0;
+    top: 40%;
+    z-index: 10;
+
+    border: none;
+}

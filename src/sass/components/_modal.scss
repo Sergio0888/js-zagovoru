@@ -1,0 +1,243 @@
+// Бэкдроп
+.backdrop.is-hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+    @media (max-width: 480px) {
+        padding: 94px 15px;
+    }
+}
+
+// Модальное окно
+
+.modal {
+    position: relative;
+    opacity: 1;
+    animation-name: modal;
+    animation-duration: 0.5s;
+
+    background: $second-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__input-item {
+        position: absolute;
+        margin: 14px 15px;
+        left: 0;
+        transition: $main-trans;
+    }
+
+    &__input-icon {
+        width: 12px;
+        height: 12px;
+        transition: $main-trans;
+    }
+
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $first-text-color;
+        margin-bottom: 4px;
+        margin-top: 10px;
+    }
+}
+
+@keyframes modal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Модальное окною. Форма
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        margin-bottom: 12px;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+    }
+
+    &-input-box {
+        position: relative;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    &-input {
+        border: none;
+        padding-left: 42px;
+        height: 40px;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: $main-trans;
+
+        &:focus-visible {
+            outline: 2px solid $main-color;
+        }
+
+        &:focus-visible ~
+        .modal__input-item >
+        .modal__input-icon {
+            fill: $main-color;
+        }
+
+        &:focus ~
+        .modal__input-item >
+        .modal__input-icon {
+            fill: $main-color;
+        }
+    }  
+}
+.modal__form-textarea {
+    height: 120px;
+    padding: 12px 16px;
+
+    &::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+// Чекбокс
+
+.form__checkbox-label {
+    position: relative;
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    user-select: none;
+}
+
+.form__checkbox-link {
+    color: $main-color;
+    text-decoration: underline;
+}
+
+.form__checkbox-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    transition: $main-trans;
+
+    &:checked ~
+    .form__checkbox-checkmark {
+        background-color: $main-color;
+        border: 2px solid $main-color;
+    }
+
+    &:checked ~
+    .form__checkbox-checkmark >
+    .form__checkbox-icon {
+        fill: $second-text-color;
+    }
+}
+
+.form__checkbox-checkmark {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 2px;
+    top: 3px;
+    border: 2px solid $main-text-color;
+    border-radius: 2px;
+    transition: $main-trans;
+}
+
+.form__checkbox-icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    fill: transparent;
+    top: -1px;
+    left: -1px;
+    transition: $main-trans;
+}
+
+// Закрытие окна
+
+.modal__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 1.5px;
+        background-color: black;
+        transition: $main-trans;
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover::after, &:hover::before {
+        background-color: $main-color;
+    }
+}

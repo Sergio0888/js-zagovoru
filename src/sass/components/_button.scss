@@ -1,0 +1,27 @@
+.btn {
+    width: 250px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: $second-text-color;
+    background-color: $main-color;
+
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    transition: $main-trans;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover, &:focus {
+        background-color: #188CE8;
+        transform: scale(1.1);
+    }
+}
