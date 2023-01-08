@@ -17,4 +17,3 @@
       refs.modal.classList.add("is-hidden");
     }
   })();
-  

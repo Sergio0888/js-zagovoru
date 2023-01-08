@@ -9,4 +9,3 @@ $('.multiple-items').slick({
   slidesToShow: 2,
   slidesToScroll: 2
 });
-

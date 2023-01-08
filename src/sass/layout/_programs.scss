@@ -78,14 +78,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
 .portfolio__btn {
     width: 100%;
     height: 100%;
@@ -122,6 +114,7 @@
 
 
 .portfolio__item {
+    cursor: pointer;
     transition: $main-trans;
     max-width: 370px;
 
@@ -157,7 +150,7 @@
     position: relative;
     overflow: hidden;
 
-    height: 280px;
+    height: 245px;
 }
 
 // .portfolio__item-box-image {
@@ -199,6 +192,7 @@
 
 .portfolio__description-box {
     padding: 20px 24px;
+    min-height: 145px;
     box-sizing: border-box;
     // border: 2px solid #fcfbff;
     border-top: none;
