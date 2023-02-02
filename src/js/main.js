@@ -22,16 +22,6 @@ $({numberValue: currentNumberKids}).animate({numberValue: 256}, {
     }
 });
 
-// 4.9 - третье число 
-
-var currentNumberRating = $('.study-amount-rating').text();
-$({numberValue: currentNumberKids}).animate({numberValue: 4.9}, {
-    duration: 1000,
-    easing: 'linear',
-    step: function() { 
-        $('.study-amount-rating').text(Math.ceil(this.numberValue)); 
-    }
-});
 
 
 onClickBtn = (e) => {
