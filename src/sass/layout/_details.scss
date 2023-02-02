@@ -53,8 +53,13 @@
             background: #F5F4FA;
             border-radius: 4px;
             margin-bottom: 30px;
-            width: 70%;
+            width: 100%;
             text-align: center;
+
+            @media (max-width: 500px) {
+                width: 70%;
+            }
+
         }
 
         &-image {
