@@ -1,5 +1,37 @@
 const btnModal = document.querySelector('.btn');
-console.log(btnModal);
+
+// 2000 - первое число
+
+var currentNumber = $('.study-amount').text();
+$({numberValue: currentNumber}).animate({numberValue: 2032}, {
+    duration: 1500,
+    easing: 'linear',
+    step: function() { 
+        $('.study-amount').text(Math.ceil(this.numberValue)); 
+    }
+});
+
+// 250 - второе числа
+
+var currentNumberKids = $('.study-amount-kids').text();
+$({numberValue: currentNumberKids}).animate({numberValue: 256}, {
+    duration: 1000,
+    easing: 'linear',
+    step: function() { 
+        $('.study-amount-kids').text(Math.ceil(this.numberValue)); 
+    }
+});
+
+// 4.9 - третье число 
+
+var currentNumberRating = $('.study-amount-rating').text();
+$({numberValue: currentNumberKids}).animate({numberValue: 4.9}, {
+    duration: 1000,
+    easing: 'linear',
+    step: function() { 
+        $('.study-amount-rating').text(Math.ceil(this.numberValue)); 
+    }
+});
 
 
 onClickBtn = (e) => {

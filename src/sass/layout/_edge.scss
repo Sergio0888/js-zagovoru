@@ -1,0 +1,63 @@
+.edge-main-box {
+    display: flex;
+    flex-direction: column; 
+    background: #aca6fe;
+    padding-top: 60px; 
+}
+.title-box-edge {
+    position: relative;
+    font-size: 22px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    line-height: 1.55em;
+    font-weight: 700;
+    color: #000;
+}
+
+.title-box-edge::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background: #000;
+    border-radius: 50px;
+    bottom: -20px;
+    left: 37%;
+
+    @media (min-width: 480px) {
+        left: 44%;
+    }
+    @media (min-width: 1100px) {
+        left: 46%;
+    }
+}
+
+.edge-sec-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.title-sec-edge {
+    font-size: 60px;
+    font-weight: 800;
+    color: #2c287c;
+    text-align: center;
+}
+
+.text-sec-edge {
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+}
+
+.edge-boxic {
+    margin-bottom: 50px;
+}
