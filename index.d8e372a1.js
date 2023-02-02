@@ -1,0 +1,2 @@
+!function(){var t=document.querySelector(".btn"),e=$(".study-amount").text();$({numberValue:e}).animate({numberValue:2032},{duration:1500,easing:"linear",step:function(){$(".study-amount").text(Math.ceil(this.numberValue))}});var n=$(".study-amount-kids").text();$({numberValue:n}).animate({numberValue:256},{duration:1e3,easing:"linear",step:function(){$(".study-amount-kids").text(Math.ceil(this.numberValue))}}),onClickBtn=function(t){console.log(t)},t.addEventListener("click",onClickBtn)}();
+//# sourceMappingURL=index.d8e372a1.js.map
