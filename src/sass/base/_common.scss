@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Micra';
+    src: url(../fonts/Micra.ttf) format('ttf'), url(../fonts/Micra.woff) format('woff');
+    font-weight: 400;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;

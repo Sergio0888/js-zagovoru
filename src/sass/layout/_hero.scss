@@ -3,15 +3,15 @@
     background-repeat: no-repeat;
     background-position: top 20% right 20%;
     background-size: cover;
+    font-family: 'Micra';
     
     @media (max-width: 550px) {
-        padding: 130px 0;
+        padding: 215px 0;
         position: absolute;
         top: 0;
         z-index: 1;
         width: 100%;
-        height: 73vh;
-        background-position: left;
+        height: 100vh;
 
         // @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         //     background-image: url(../images/bg-image/bg_mob@2x.jpg);
@@ -38,7 +38,6 @@
 
     &__container {
         display: flex;
-        font-family: 'Micra', arial;
         flex-direction: column;
         align-items: center;
     
@@ -46,6 +45,7 @@
 
     &__title {
         font-weight: 900;
+        font-family: 'Micra';
         color: $second-text-color;
         text-align: center;
         margin-bottom: 30px;
