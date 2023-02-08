@@ -1,6 +1,7 @@
 
 .header__open-menu {
     display: flex;
+    z-index: 2;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -28,7 +29,7 @@
 
 
 .mobile-menu__modal {
-    z-index: 1;
+    z-index: 3;
 
     position: fixed;
     display: flex;

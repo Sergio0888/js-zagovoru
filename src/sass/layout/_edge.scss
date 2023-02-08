@@ -3,10 +3,12 @@
     flex-direction: column; 
     background: #aca6fe;
     padding-top: 60px; 
+    margin-top: 590px;
 }
 .title-box-edge {
+    font-family: 'Micra', arial;
     position: relative;
-    font-size: 22px;
+    font-size: 14px;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -37,14 +39,15 @@
 
 .edge-sec-box {
     display: flex;
+    font-family: 'Micra', arial;
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
 }
 
 .title-sec-edge {
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 900;
     color: #2c287c;
     text-align: center;
 }
@@ -53,7 +56,7 @@
     margin-top: 10px;
     width: 200px;
     text-align: center;
-    font-size: 17px;
+    font-size: 13px;
     color: #000;
     font-weight: 700;
 }

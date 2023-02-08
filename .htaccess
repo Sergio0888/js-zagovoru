@@ -1,0 +1,2 @@
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://zagovoru.com.ua/$1 [R=301,L]

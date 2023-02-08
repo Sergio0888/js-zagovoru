@@ -1,12 +1,16 @@
 .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../images/img-bg.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../images/imag-bg.jpg);
     background-repeat: no-repeat;
     background-position: top 20% right 20%;
     background-size: cover;
     
     @media (max-width: 550px) {
-        padding: 45px 0;
-        height: 300px;
+        padding: 130px 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 73vh;
         background-position: left;
 
         // @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -34,6 +38,7 @@
 
     &__container {
         display: flex;
+        font-family: 'Micra', arial;
         flex-direction: column;
         align-items: center;
     
@@ -49,8 +54,9 @@
 
         @media (max-width: 1200px) {
             max-width: 360px;
-            font-size: 26px;
+            font-size: 17px;
             line-height: 1.61;
+            margin-bottom: 200px;
         }
         
         @media (min-width: 1201px) {

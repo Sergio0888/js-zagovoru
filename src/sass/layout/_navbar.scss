@@ -1,9 +1,13 @@
 .header {
-    border-bottom: 1px solid #ECECEC;
-    background: linear-gradient(#fff , #8f88f0a1);
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    background: linear-gradient(#747474c2, #51515133);;
 
     @media (max-width: 550px) {
         padding: 10px 15px;
+        width: 100%;
+        z-index: 3;
+        position: fixed;
+        top: 0;
     }
 
     @media (min-width: 550px) and (max-width: 1200px) {
@@ -27,6 +31,7 @@
     &__nav {
         display: flex;
         align-items: center;
+        z-index: 2;
     }
 
     &__menu {
