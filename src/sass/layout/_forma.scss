@@ -1,28 +1,39 @@
 .section-form {
-    background: linear-gradient(#fff, #938de4a1);
+    font-family: 'Micra';
+    height: 70vh;
+    background: #d4d4d461;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 140px 15px;
 }
 
 .form-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 1.19;
-    text-align: center;
     margin-bottom: 23px;
 }
 
 .form-title.second {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .header__address-link.second {
     font-size: 20px;
-    color: #535353;
+    color: #222222;
+    align-self: center;
+}
+
+.form-box-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-subscr {
+    margin-top: 10px;
+    font-size: 10px;
 }
