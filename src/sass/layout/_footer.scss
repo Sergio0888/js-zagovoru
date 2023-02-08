@@ -1,8 +1,9 @@
 .footer {
     background-color: #2F303A;
+    font-family: 'Micra';
 
         @media (max-width: 1260px) {
-        padding: 60px 15px;
+        padding: 50px 15px;
         }
     
         @media (min-width: 1261px) {
@@ -66,7 +67,7 @@
     &__contact-address {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 11px;
         line-height: 1.71;
         color: $second-text-color;
     }

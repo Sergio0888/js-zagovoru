@@ -1,5 +1,4 @@
 .btn {
-    font-family: 'Micra';
     letter-spacing: .06em;
     color: #000;
     text-align: center;
@@ -7,15 +6,14 @@
     cursor: pointer;
     background-color: #d7fa00;
     border: none;
-    border-radius: 8px;
+    // border-radius: 8px;
     align-self: center;
     padding: 8px 14px;
-    font-family: inherit;
+    font-family: 'Micra';
     font-size: 10px;
     font-weight: 700;
     line-height: 30px;
     transition: all .25s cubic-bezier(.4, 0, .2, 1);
-    box-shadow: 0 4px 4px #00000026;
 
     &:hover, &:focus {
         background-color: #188CE8;
