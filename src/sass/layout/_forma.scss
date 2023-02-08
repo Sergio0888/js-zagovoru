@@ -1,16 +1,18 @@
 .section-form {
     font-family: 'Micra';
-    height: 70vh;
-    background: #d4d4d461;
+    background: linear-gradient(#2f303af0, #2f303ae6), url(../images/zapus-form.jpg);
+    background-repeat: no-repeat;
+    background-position: top 20% right 40%;
+    background-size: cover;
 }
-
 .form {
     display: flex;
     flex-direction: column;
-    padding: 140px 15px;
+    padding: 110px 35px;
 }
 
 .form-title {
+    color: #fff;
     font-size: 18px;
     font-weight: 900;
     line-height: 1.19;
@@ -19,21 +21,23 @@
 
 .form-title.second {
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .header__address-link.second {
     font-size: 20px;
-    color: #222222;
+    color: #ffe3009e;
     align-self: center;
 }
 
 .form-box-one {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .form-subscr {
+    color: #ffffff9e;
     margin-top: 10px;
     font-size: 10px;
 }
