@@ -21,10 +21,6 @@
     }
 }
 
-.section-programs {
-    background: linear-gradient(#b6b0ee, #b08bd5);
-}
-
 
 .kurs__list {
         display: flex;
@@ -218,4 +214,31 @@
     font-size: 16px;
     line-height: 1.87;
     color: #b8b4cb;
+}
+
+
+
+
+// Thets
+
+.section.section-programs {
+    height: 100vh;
+    padding: 100px 15px;
+}
+
+.program-title {
+    font-family: 'Micra';
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.program-list{
+    font-size: 15px;
+    list-style: inside;
+}
+
+.program-list-item {
+    margin-bottom: 10px;
 }
