@@ -31,7 +31,7 @@
 
 .mobile-menu__modal {
     z-index: 3;
-
+    font-family: 'Micra';
     position: fixed;
     display: flex;
     top: 0;
@@ -66,9 +66,9 @@
 }
 
 .mobile-menu__link {
-    font-size: 40px;
+    font-size: 20px;
     line-height: 47px;
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 0.02em;
     color: $main-text-color;
 }
@@ -93,14 +93,14 @@
 
     &-tel {
         font-weight: 500;
-        font-size: 34px;
+        font-size: 20px;
         line-height: 40px;
         letter-spacing: 0.02em;
         color: $main-color;
     }
     &-mail {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 17px;
         line-height: 28px;
         letter-spacing: 0.02em;
         color: $first-text-color;
@@ -121,7 +121,7 @@
     &-link {
         position: relative;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 22px;
         letter-spacing: 0.02em;
         color: $main-color;
